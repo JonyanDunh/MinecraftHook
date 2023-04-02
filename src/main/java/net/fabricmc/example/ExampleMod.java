@@ -1,8 +1,10 @@
 package net.fabricmc.example;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.MinecraftClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.minecraft.entity.player.PlayerEntity;
 
 public class ExampleMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -17,5 +19,11 @@ public class ExampleMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+//		PlayerEntity player = MinecraftClient.getInstance().player;
+//		assert player != null;
+//		LOGGER.info(String.valueOf(player.getX()));
+//		LOGGER.info(String.valueOf(player.getZ()));
+//		LOGGER.info(String.valueOf(player.getY()));
 	}
+
 }
